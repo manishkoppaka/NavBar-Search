@@ -1,0 +1,67 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+	<nav class="navbar navbar-dark bg-dark navbar-expand-md navigation-clean-button fixed-top">
+  <a class="navbar-brand" href="#"><img src="../assets/img/deloitte-logo.svg" width="50" height="50" class="d-inline-block align-left" alt="">Ascend</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Core Processes</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Core Assets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Asset1</a>
+          <a class="dropdown-item" href="#">Asset2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Digital Core Assets</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <div>
+        <!-- <input type="text" name="11" [(ngModel)]="SeachWordSet">{{SeachWordSet}} -->
+         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" (keyup)="onKey($event)" (click)=' openDropDown() '>
+         <a>{{SeachWordSet}}</a>
+          <div clickOutside (clickOutside)="closeDropDown()">
+        <div *ngIf='showDropDown' class="searchText-dropdown-menu">
+             <div (click)='closeDropDown2(s)' class='search-results ' *ngFor="let s of searchTexts | searchFilter: getSearchValue()">
+                    <a>
+                           {{s}}
+                    </a>
+                </div>
+      </div >
+       </div>
+      </div>
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" (keyup)="onKey($event)"> -->
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+       <!--  <div clickOutside (clickOutside)="closeDropDown()">
+        <div *ngIf='showDropDown' class="searchText-dropdown-menu">
+        	   <div class='search-results ' *ngFor="let s of searchTexts | searchFilter: getSearchValue()">
+                    <a>
+                           {{s}}
+                    </a>
+                </div>
+      </div >
+       </div> -->
+    </form>
+
+
+  </div>
+</nav>
+
+  <div class="container-Buttons">
+
+             <button *ngFor="let searchtags of searchTiles | searchFilter: getSearchValue()" class="btn search-tags">
+                        {{searchtags}}
+                    </button>
+        
+        </div>
+      

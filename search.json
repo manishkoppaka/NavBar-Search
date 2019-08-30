@@ -1,0 +1,7 @@
+[{"_id":{"$oid":"5b7502f0cf3193c9d2f1aaf7"},"searchText":"Oracle","creationDate":"01-Jan-2018","lastUpdateDate":"01-Jan-2018","lastUpdatedBy":{"$numberInt":"1001"},"createdBy":{"$numberInt":"1001"}},
+{"_id":{"$oid":"5b7502f0cf3193c9d2f1aaf9"},"searchText":"P2P","creationDate":"01-Jan-2018","lastUpdateDate":"01-Jan-2018","lastUpdatedBy":{"$numberInt":"1001"},"createdBy":{"$numberInt":"1001"}},
+{"_id":{"$oid":"5b79806f580a0c1b24c74e53"},"searchText":"RPA","creationDate":"31-Aug-2018"},
+{"_id":{"$oid":"5b7e7349e67458da3e23da16"},"searchText":"Oracle ERP","creationDate":"01-Aug-2018","lastUpdateDate":"01-Aug-2018","lastUpdatedBy":{"$numberInt":"1001"},"createdBy":{"$numberInt":"1001"}},
+{"_id":{"$oid":"5b7e7349e67458da3e23da17"},"searchText":"EPM","creationDate":"01-Aug-2018","lastUpdateDate":"01-Aug-2018","lastUpdatedBy":{"$numberInt":"1001"},"createdBy":{"$numberInt":"1001"}},
+{"_id":{"$oid":"5b7e7349e67458da3e23da18"},"searchText":"Oracle HCM","creationDate":"01-Aug-2018","lastUpdateDate":"01-Aug-2018","lastUpdatedBy":{"$numberInt":"1002"},"createdBy":{"$numberInt":"1002"}},
+{"_id":{"$oid":"5b7e7349e67458da3e23da19"},"searchText":"Oracle Cloud","creationDate":"01-Aug-2018","lastUpdateDate":"01-Aug-2018","lastUpdatedBy":{"$numberInt":"1002"},"createdBy":{"$numberInt":"1002"}}]
